@@ -1,0 +1,19 @@
+<div class="text-center">
+    @model Chef
+    <h1 class="display-3">Add a new Dish!</h1>
+    <form method="post" class="newChef" asp-action="addChef" controller="Home">
+        <span class="error" asp-validation-for="first_name"></span>
+        <label for="first_name">First Name</label>
+        <input class="form-control" type="text" name="first_name">
+
+        <span class="error" asp-validation-for="last_name"></span>
+        <label for="last_name">Last Name</label>
+        <input class="form-control" type="text" name="last_name">
+
+        <span class="error" asp-validation-for="DOB"></span>
+        <label for="DOB">Date of Birth</label>
+        <input class="form-control" type="date" name="DOB">
+        <hr>
+        <button class="btn btn-primary">Add Chef</button>
+    </form>
+</div>

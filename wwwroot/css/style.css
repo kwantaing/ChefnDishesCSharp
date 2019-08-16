@@ -1,0 +1,5 @@
+.newDish, .newChef{
+    width: 50%;
+    display:inline-block;
+    text-align:left;
+}
